@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+        <canvas id="blackboardCanvas" class="bg-black border border-gray-700"></canvas>
+        <div class="flex space-x-2 p-4">
+        <input type="color" id="colorPicker" value="#ffffff" class="w-10 h-10 rounded-full cursor-pointer">
+        <input type="range" id="thicknessSlider" min="1" max="10" value="3" class="w-24">
+        <button id="eraseBtn" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Eraser</button>
+        <button id="clearBtn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Clear</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
