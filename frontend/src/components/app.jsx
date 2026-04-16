@@ -90,7 +90,7 @@ const App = () => {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [activeHistory, setActiveHistory] = useState(null);
 
-  const ai = new GoogleGenAI({ apiKey: 'AIzaSyB2FHtttxAnkIYIVhkYNAGzaX2B6LLTswg' });
+  const ai = new GoogleGenAI({ apiKey: '' });// Enter Your API Here
 
   async function fetchHistory() {
     setHistoryLoading(true);
